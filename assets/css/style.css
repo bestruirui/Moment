@@ -134,7 +134,7 @@ blockquote {
 }
 
 #main {
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .theme-toggle {
@@ -169,13 +169,14 @@ blockquote {
 
 .memos__content {
     flex-grow: 1;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     position: relative;
     max-width: 100%;
     width: 100%;
 }
 
 .memos__content:before {
+    display: none;
     content: '';
     position: absolute;
     background: url('/assets/img/avatar.svg') no-repeat;
@@ -229,6 +230,7 @@ blockquote {
 }
 
 .memos__text:before {
+    display: none;
     content: "";
     position: absolute;
     top: 23px;
@@ -349,6 +351,17 @@ blockquote {
 }
 
 .timeline img, .resimg img {
+    object-fit: cover;
+    height: 100%;
+    width: var(--hope-sizes-full);
+    border-radius: var(--hope-radii-lg);
+    box-shadow: var(--hope-shadows-md);
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+    min-width: 100%;
+    -o-object-fit: cover;
+    /* object-fit: cover;
     display: block;
     vertical-align: middle;
     max-width: 100%;
@@ -358,7 +371,7 @@ blockquote {
     min-width: 100%;
     cursor: pointer;
     -o-object-fit: cover;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .tag-span {
@@ -539,6 +552,7 @@ blockquote {
     }
 
     .memos__content:before {
+        display: none;
         border-radius: 25px;
         height: 25px;
         width: 25px;
