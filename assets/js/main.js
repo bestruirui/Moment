@@ -268,7 +268,7 @@ function updateHTMl(data) {
                 memoContREG += '<div class="resource-wrapper "><p class="datasource">' + resUrl + '</p></div>'
             }
         }
-        memoResult += '<li class="timeline"><div class="memos__content"><div class="memos__text"><p>' + memoContREG + '</p></div><div class="memos__meta"><small class="memos__date">' + moment(data[i].createdTs * 1000).twitter() + ' • 来自「<a href="' + memo.host + 'm/' + data[i].id + '" target="_blank">BESTRUI</a>」</small></div></div></li>'
+        memoResult += '<li class="timeline"><div class="memos__content"><div class="memos__text"><p>' + memoContREG + '</p></div><div class="memos__meta"><small class="memos__date">' + moment(data[i].createdTs * 1000).twitter() + ' • 来自「<a>BESTRUI</a>」</small></div></div></li>'
     }
     var memoBefore = '<ul class="">'
     var memoAfter = '</ul>'
