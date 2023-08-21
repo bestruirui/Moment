@@ -225,7 +225,7 @@ class EmojiReaction extends s {
         </div>
       </div>
       <!-- reactions got -->
-      <div class="rui-face" style="display: flex; overflow-x: auto; gap: 0.375rem;">
+      <div class="rui-face" style="border-radius: 6px;display: flex; overflow-x: auto; gap: 0.375rem;">
         ${this.availableReactions.map(item => x`
           <div @click=${this._react} data-name="${item.reaction_name}" class="${item.meReacted ? 'reaction-got-reacted' : 'reaction-got-not-reacted'}" style="display: ${item?.count && item.count > 0 ? 'flex' : 'none'}; user-select: none; cursor: pointer; justify-content: center; align-items: center; border-radius: 108px; padding: 0 0.25rem; font-size: 0.75rem;">
             <span style="pointer-events: none;">${item.emoji}</span><span style="padding:0 0.375rem; pointer-events: none;">${item.count}</span>
