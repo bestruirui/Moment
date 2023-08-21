@@ -171,7 +171,7 @@ class EmojiReaction extends s {
     }
     @media (min-width: 400px) {
         div.rui-face {
-            max-width: 240px;
+            max-width: 230px;
         }
     
     
