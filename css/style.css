@@ -3613,3 +3613,7 @@ div#tag-list-all {
         max-width: 240px !important;
     }
 }
+
+[id*=btn_memo_] {
+    display: none;
+}
