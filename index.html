@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Moments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://bestrui.top/favicon.ico">
+    <link href="/index.xml" title="BESTRUI" type="application/rss+xml">
+    <link rel="canonical" href="https://moments.bestrui.top" />
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="我的日常" />
+    <meta property="og:title" content="Moments" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moments.bestrui.top" />
+    <meta property="og:description" content="我的日常" />
+</head>
+
+
+
+<body class='page '>
+    <div id="wrapper" class="wrapper">
+        <script src="/js/moment.min.js"></script>
+        <script src="/js/moment.twitter.min.js"></script>
+        <script>
+            function formatDate(param) {
+                if (typeof param === 'number') {
+                    param = new Date(param * 1000).toISOString();
+                }
+                return moment(Date.parse(param)).twitterLong().replace(/\s\d{2}:\d{2}/, '');
+            }
+
+        </script>
+
+        <div class="memos-header">
+            <div class="intro">
+                <div id="bber"></div>
+                <script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script type="text/javascript">
+                    var bbMemos = {
+                        memos: 'https://memos.bestrui.top/',
+                        limit: '',
+                        creatorId: '1',
+                        domId: '',
+                    }
+                </script>
+                <script src="/js/memos.js"></script>
+                <!-- <script src="/js/coco-message.min.js"></script> -->
+                <link href="https://npm.elemecdn.com/artalk@2.5.5/dist/ArtalkLite.css" rel="stylesheet">
+                <script src="https://npm.elemecdn.com/artalk@2.5.5/dist/ArtalkLite.js"></script>
+            </div>
+        </div>
+        <script type="module" src="https://cdn.jsdelivr.net/gh/emaction/frontend.dist@1.0.8/bundle.js"></script>
+        <script src="/js/view-image.min.js"></script>
+        <script>
+            window.addEventListener('load', function () {
+                document.body.classList.add('loaded');
+            });
+        </script>
+        <script>
+            window.ViewImage && ViewImage.init(".photo-home a, .content_zhengwen img, .top-img,.photo-about a,.gallery-thumbnail img");
+        </script>
+</body>
+
+</html>
