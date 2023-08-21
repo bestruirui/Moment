@@ -94,7 +94,7 @@ function getNextList() {
     //在未展开评论时，默认显示评论数
     Artalk.loadCountWidget({
       server: 'https://artalk.bestrui.top',
-      site: '空白唠叨',
+      site: 'Moments',
       countEl: '#ArtalkCount'
     });
   })
@@ -106,7 +106,7 @@ function getNextList() {
 //   var bbUrl = memos + "api/v1/memo/stats?creatorId=" + bbMemo.creatorId;
 //   fetch(bbUrl).then(res => res.json()).then(resdata => {
 //     if (Array.isArray(resdata)) {
-//       var allnums = ' ( 目前共唠叨了 ' + resdata.length + ' 条 )';
+//       var allnums = ' ( 目前共 ' + resdata.length + ' 条 )';
 //       bbLoad.insertAdjacentHTML('afterend', allnums);
 //     }
 //   });
@@ -253,7 +253,7 @@ function getTagNow(e) {
     //在未展开评论时，默认显示评论数
     Artalk.loadCountWidget({
       server: 'https://artalk.bestrui.top',
-      site: '空白唠叨',
+      site: 'Moments',
       countEl: '#ArtalkCount'
     });
   })
@@ -362,7 +362,7 @@ function loadArtalk(memo_id) {
       pageKey: '/m/' + memo_id,
       pageTitle: '',
       server: 'https://artalk.bestrui.top',
-      site: '空白唠叨',
+      site: 'Moments',
       darkMode: 'auto'
     });
   } else {
