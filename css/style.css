@@ -3174,6 +3174,8 @@ blockquote p {
 }
 
 .reactions {
+    display: block;
+    width: 2;
     --start-smile-svg-fill-color: #999;
     --start-smile-border-color-hover: #afafaf;
 }
@@ -3604,4 +3606,10 @@ button.load-btn.button-load {
 
 div#tag-list-all {
     display: none;
+}
+
+@media (max-width: 700px) {
+    div.memos-zan {
+        max-width: 240px !important;
+    }
 }
